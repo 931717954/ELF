@@ -8,3 +8,4 @@
 * 当暂停后主页的转动图片会暂停
 * 切歌操作
 ![image](https://github.com/931717954/ELF/blob/master/%E5%88%87%E6%AD%8C.mov)
+## 这个gif我也很绝望～
