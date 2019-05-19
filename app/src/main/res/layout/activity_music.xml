@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.MusicActivity"
+    android:orientation="vertical">
+<android.support.v7.widget.Toolbar
+    android:id="@+id/tb_music"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:titleMarginStart="130dp">
+    <TextView
+        android:id="@+id/tv_music_song"
+        android:textSize="18sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"/>
+</android.support.v7.widget.Toolbar>
+    <TextView
+        android:id="@+id/tv_music_singer"
+        android:layout_marginTop="1dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minLines="1"/>
+    <ImageView
+        android:id="@+id/img_music_background"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="13dp"
+        android:layout_width="345dp"
+        android:layout_height="210dp" />
+    <org.sang.lrcview.LrcView
+        android:id="@+id/lrc_view"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="51dp"
+        android:layout_width="286dp"
+        android:layout_height="80dp"/>
+    <android.support.constraint.ConstraintLayout
+        android:orientation="horizontal"
+        android:layout_marginTop="59dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/img_down_load"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_download"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.2"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:id="@+id/img_star"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_star_off"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.4"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="0dp"
+            tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:id="@+id/img_like"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:src="@mipmap/ic_like_off"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.6"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="0dp"
+            tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:id="@+id/img_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:src="@mipmap/ic_commend"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.8"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints" />
+    </android.support.constraint.ConstraintLayout>
+        <android.support.v7.widget.AppCompatSeekBar
+            android:id="@+id/sb_music_main"
+            android:layout_width="345dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="33dp"/>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="29dp">
+
+        <ImageView
+            android:id="@+id/img_move_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:src="@mipmap/ic_move_back"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:id="@+id/img_pause_run"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:src="@mipmap/ic_play_running"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:id="@+id/img_move_forward"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:src="@mipmap/ic_move_forward"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.704"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+    </android.support.constraint.ConstraintLayout>
+</LinearLayout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+   <com.zixuan.elf.customizeView.GramophoneView
+       android:id="@+id/grp_record"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_centerHorizontal="true"
+       app:disk_rotate_speed="1"
+       app:picture_radiu="110dp"
+       android:layout_marginTop="45dp"
+
+       app:src="@mipmap/ic_default_bottom_music_icon"/>
+
+   <TextView
+       android:id="@+id/tv_song_name"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:maxLines="1"
+       android:layout_marginTop="32dp"
+       android:layout_centerHorizontal="true"
+       android:layout_below="@+id/grp_record"
+       android:text="未知歌曲"
+       android:textSize="17dp" />
+   <TextView
+       android:id="@+id/tv_singer_name"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:maxLines="1"
+       android:layout_centerHorizontal="true"
+       android:layout_below="@+id/tv_song_name"
+       android:layout_marginTop="15dp"
+       android:text="未知艺人"
+       android:textSize="13dp" />
+    <FrameLayout
+        android:id="@+id/frm_mood"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="31dp"
+        android:layout_marginBottom="49dp">
+
+        <ImageView
+            android:id="@+id/bg_frame_short"
+            android:src="@mipmap/bg_frame_short"
+            android:layout_gravity="bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/img_mood_0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_mood_happy"
+                android:layout_alignParentBottom="true" />
+            <ImageView
+                android:id="@+id/img_mood_1"
+                android:src="@mipmap/ic_mood_unhappy"
+                android:layout_above="@id/img_mood_0"
+                android:layout_marginBottom="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:id="@+id/img_mood_2"
+                android:layout_above="@id/img_mood_1"
+                android:src="@mipmap/ic_mood_clam"
+                android:layout_marginBottom="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:id="@+id/img_mood_3"
+                android:layout_above="@id/img_mood_2"
+                android:src="@mipmap/ic_mood_exciting"
+                android:layout_marginBottom="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/img_play"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="31dp"
+        android:layout_marginBottom="49dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_music_detail"/>
+</RelativeLayout>
